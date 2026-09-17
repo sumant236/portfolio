@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,20 +11,22 @@
     />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="SUMANT | Frontend Developer" />
+    <meta name="title" content="SUMANT | Full-Stack Developer" />
     <meta
       name="description"
-      content="Portfolio of Sumant, a Frontend Developer specializing in clean, interactive web experiences."
+      content="Portfolio of Sumant, a Full-Stack Developer specializing in clean, interactive web experiences."
     />
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SUMANT | Frontend Developer" />
+    <meta property="og:title" content="SUMANT | Full-Stack Developer" />
     <meta
       property="og:description"
       content="Check out my latest projects and skills."
     />
     <meta property="og:image" content="link-to-your-actual-logo-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <link rel="stylesheet" href="style.css" />
     <!-- Google fonts -->
@@ -81,7 +83,7 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarlist"
-          !aria-expanded
+          aria-expanded="false"
           aria-label="Expand Navigation"
         >
           <i class="fa-solid fa-bars fs-5"></i>
@@ -99,22 +101,33 @@
         </div>
       </div>
       <div>
-        <div><h1>Sumant Singh</h1></div>
-        <div class="social-icons">
+        <div>
+          <h1>Sumant Singh</h1>
+          <p class="hero-tagline">
+            Full-Stack Software Engineer — Java, Spring Boot & React
+          </p>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="hero-btn hero-btn-primary">Contact me</a>
           <a
-            href="https://www.linkedin.com/in/sumant-singh-619851192/"
+            href="https://drive.google.com/file/d/1v4Vp7xb-40CEbzBgkFee5iN3GkBgMSy-/view?usp=sharing"
             target="_blank"
+            class="hero-btn hero-btn-secondary"
+            >Download resume</a
           >
+        </div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/singh-sumant/" target="_blank">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/sumant236" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="mailto:sumantsingh236@gmail.com" target="_blank">
-            <i class="fa-brands fa-google-plus-g"></i>
+          <a href="mailto:sumantphogat@gmail.com" target="_blank">
+            <i class="fa-regular fa-envelope"></i>
           </a>
           <a
-            href="https://wa.me/919050764629?text=Hello%20there!"
+            href="https://wa.me/919896939050?text=Hello%20there!,%20I%20saw%20your%20portfolio%20and%20I%20would%20like%20to%20connect%20with%20you."
             target="_blank"
           >
             <i class="fa-brands fa-whatsapp"></i>
@@ -130,17 +143,17 @@
         </div>
         <!-- Professional Summary -->
         <p>
-          Experienced web developer with skills in
+          Full-Stack Software Engineer with 4+ years of professional experience
+          building enterprise <span>web applications and platforms</span>.
+          Backend-focused on developing secure
+          <span>Java and Spring Boot services, REST APIs, and PostgreSQL</span
+          >-backed persistence, with strong front-end integration skills in
+          <span>ReactJS, Redux, and JavaScript</span>. Leverages expertise in
           <span
-            >Java, ReactJS, React Redux, HTML, CSS, JavaScript and
-            SpringBoot</span
-          >. Proficient in creating captivating and
-          <span>interactive user interfaces</span>, as well as building robust
-          <span>back-end solutions using Java & SpringBoot</span>. Committed to
-          clean code and meticulous attention to detail, resulting in seamless
-          user experiences. Known for dedication, teamwork, and effective
-          communication. Open to new challenges and eager to
-          <span>collaborate</span> on your next project!
+            >database design, microservices architecture, and performance
+            optimization</span
+          >
+          to drive end-to-end delivery.
         </p>
       </div>
     </section>
@@ -150,141 +163,148 @@
         <i class="fa-solid fa-chalkboard-user"></i>
         <h1>Skills</h1>
       </div>
-      <!-- list of skills -->
-      <div class="skills">
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="java"
-          aria-valuenow="70"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 70%; background-color: #f04102"
-          >
-            Java
+
+      <div class="skills-grid">
+        <div class="skill-category">Backend</div>
+        <div class="skill-flip-row">
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #f04102">
+                <i class="fa-brands fa-java"></i><span>Java</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #f04102">
+                <span>4+ yrs · core backend language</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #058e93">
+                <i class="fa-solid fa-server"></i><span>Spring Boot</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #058e93">
+                <span>3+ yrs · built enterprise APIs</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #336791">
+                <i class="fa-solid fa-database"></i><span>PostgreSQL</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #336791">
+                <span>3+ yrs · primary database</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #59666c">
+                <i class="fa-solid fa-layer-group"></i><span>Hibernate</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #59666c">
+                <span>3+ yrs · ORM and JPA</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #2f5233">
+                <i class="fa-solid fa-shield"></i><span>Spring Security</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #2f5233">
+                <span>JWT, OAuth2, BCrypt</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="react"
-          aria-valuenow="90"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 90%; background-color: #0265f0"
-          >
-            React
+
+        <div class="skill-category">Frontend</div>
+        <div class="skill-flip-row">
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #0265f0">
+                <i class="fa-brands fa-react"></i><span>React</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #0265f0">
+                <span>4+ yrs · UI development</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #0c3772">
+                <i class="fa-solid fa-diagram-project"></i
+                ><span>Redux Toolkit</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #0c3772">
+                <span>state management</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #7d02f0">
+                <i class="fa-brands fa-js"></i><span>JavaScript</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #7d02f0">
+                <span>ES6+, daily driver</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #0a9517">
+                <i class="fa-brands fa-html5"></i><span>HTML / CSS</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #0a9517">
+                <span>semantic, responsive layouts</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #38b2ac">
+                <i class="fa-solid fa-wind"></i><span>Tailwind CSS</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #38b2ac">
+                <span>utility-first styling</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="react-redux"
-          aria-valuenow="80"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 80%; background-color: #0c3772"
-          >
-            React Redux
+
+        <div class="skill-category">Tools & Workflow</div>
+        <div class="skill-flip-row">
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #24292e">
+                <i class="fa-brands fa-github"></i><span>Git & GitHub</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #24292e">
+                <span>version control, PRs, reviews</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="html"
-          aria-valuenow="90"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 90%; background-color: #0a9517"
-          >
-            HTML
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #570565">
+                <i class="fa-solid fa-palette"></i><span>Material UI</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #570565">
+                <span>component library</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="css"
-          aria-valuenow="80"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 80%; background-color: #f0023d"
-          >
-            CSS
-          </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="javascript"
-          aria-valuenow="75"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 75%; background-color: #7d02f0"
-          >
-            JavaScript
-          </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="springboot"
-          aria-valuenow="60"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 60%; background-color: #058e93"
-          >
-            SpringBoot
-          </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="material-ui"
-          aria-valuenow="65"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 65%; background-color: #570565"
-          >
-            Material UI
-          </div>
-        </div>
-        <div
-          class="progress skills-bar"
-          role="progressbar"
-          aria-label="ant-design"
-          aria-valuenow="65"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <div
-            class="progress-bar"
-            style="width: 65%; background-color: #5f0b1d"
-          >
-            Ant Design
+          <div class="skill-card" tabindex="0">
+            <div class="skill-card-inner">
+              <div class="skill-face skill-front" style="--accent: #5f0b1d">
+                <i class="fa-solid fa-swatchbook"></i><span>Ant Design</span>
+              </div>
+              <div class="skill-face skill-back" style="--accent: #5f0b1d">
+                <span>component library</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -298,24 +318,72 @@
 
       <div class="timeline">
         <div class="timeline-left-box left">
+          <div class="timeline-container current-role">
+            <div class="timeline-logo">
+              <img
+                src="./image/K_Thirty_Logo.jpg"
+                alt="K Thirty IT Business Solution logo"
+                loading="lazy"
+              />
+            </div>
+            <span class="current-badge">Current</span>
+            <h3 class="designation m0 m-blue">Full-Stack Developer</h3>
+            <h4 class="heading-name">
+              K Thirty IT Business Solution Pvt. Ltd.
+            </h4>
+            <h5 class="duration m0">July 2023 - Present</h5>
+            <ul class="description-list">
+              <li>
+                Engineered a secure Cash Management system using Java, Spring
+                Boot, and Hibernate, processing multi-branch financial
+                transactions with audit-ready reporting.
+              </li>
+              <li>
+                Architected the Induction Feedback Form (IFF), a centralized HR
+                portal automating trainer evaluations and replacing legacy
+                manual tracking.
+              </li>
+              <li>
+                Designed RESTful APIs bridging server-side financial logic with
+                React frontends.
+              </li>
+              <li>
+                Optimized PostgreSQL schemas and entity relationships to support
+                real-time data entry and complex querying.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-right-box right">
           <div class="timeline-container">
             <div class="timeline-logo">
-              <img src="./image/Zipstack Logo.png" />
+              <img
+                src="./image/Zipstack Logo.png"
+                alt="Zipstack logo"
+                loading="lazy"
+              />
             </div>
-            <h3 class="designation m0 m-blue">
-              Garduate Trainee - Frontend Developer
-            </h3>
+            <h3 class="designation m0 m-blue">Frontend Developer</h3>
             <h4 class="heading-name">Zipstack</h4>
             <h5 class="duration m0">July 2022 - May 2023</h5>
-            <p class="description text-align-justify">
-              Completed the migration of Material-UI (MUI) components to Ant
-              Design framework from scratch, ensuring seamless integration and
-              consistent UI across the application. Keywords: migration,
-              Material-UI, Ant Design, UI integration, consistency. Implemented
-              comprehensive unit tests for hooks, components, and methods using
-              the Jest testing framework during the migration process, ensuring
-              code reliability and identifying potential issues.
-            </p>
+            <ul class="description-list">
+              <li>
+                Led a large-scale UI migration from Material UI to Ant Design,
+                reducing technical debt and standardizing the design system.
+              </li>
+              <li>
+                Resolved critical frontend rendering and state-management
+                defects, improving user experience.
+              </li>
+              <li>
+                Authored Jest unit tests for core components, reducing
+                post-release bugs by 30%.
+              </li>
+              <li>
+                Integrated RESTful APIs, coordinating with backend engineers for
+                seamless data flow.
+              </li>
+            </ul>
           </div>
         </div>
         <div class="timeline-right-box right"></div>
@@ -336,10 +404,29 @@
       </div>
 
       <div class="timeline">
+        <div class="timeline-left-box left">
+          <div class="timeline-container">
+            <div class="timeline-logo">
+              <img
+                src="./image/Masai-logo.png"
+                alt="Masai School logo"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="designation m0 m-blue">Full Stack Web Development</h3>
+            <h6 class="stream">Full-Stack Development Program</h6>
+            <h4 class="heading-name">Masai School</h4>
+            <h5 class="duration m0">August 2021 - July 2022</h5>
+          </div>
+        </div>
         <div class="timeline-right-box right">
           <div class="timeline-container">
             <div class="timeline-logo">
-              <img src="./image/CU-image.jpeg" />
+              <img
+                src="./image/CU-image.jpeg"
+                alt="Chandigarh University logo"
+                loading="lazy"
+              />
             </div>
             <h3 class="designation m0 m-blue">Bachelor of Engineering</h3>
             <h6 class="stream">Computer Science Engineering</h6>
@@ -347,7 +434,7 @@
             <h5 class="duration m0">August 2017 - June 2021</h5>
           </div>
         </div>
-        <div class="timeline-left-box left"></div>
+        <div class="timeline-right-box right"></div>
         <div id="education-divider">
           <div class="education-traveller">
             <div>
@@ -365,7 +452,48 @@
       </div>
       <div class="projects">
         <div class="project">
-          <img src="./image/Project-5.jpeg" />
+          <img
+            src="./image/Project-7.png"
+            alt="TechCoach.io AI interview platform screenshot"
+            loading="lazy"
+          />
+          <span class="featured-badge">Featured</span>
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">TechCoach.io</h3>
+              <div class="visit-links">
+                <a href="https://techcoach-io.onrender.com/" target="_blank"
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/TechCoach.io-Backend">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                An AI-powered technical interview platform delivering real-time
+                candidate evaluations and secure user provisioning through a
+                scalable Spring Boot and PostgreSQL architecture.
+              </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PostgreSQL</li>
+                <li>Vite</li>
+                <li>Google Gemini API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="./image/Project-5.jpeg"
+            alt="SkyCast weather app screenshot"
+            loading="lazy"
+          />
           <div class="background"></div>
           <div class="project-details">
             <div class="project-head">
@@ -399,7 +527,11 @@
           </div>
         </div>
         <div class="project">
-          <img src="./image/Project-6.png" />
+          <img
+            src="./image/Project-6.png"
+            alt="BusyBuy e-commerce app screenshot"
+            loading="lazy"
+          />
           <div class="background"></div>
           <div class="project-details">
             <div class="project-head">
@@ -432,7 +564,11 @@
           </div>
         </div>
         <div class="project">
-          <img src="./image/Project-1.png" />
+          <img
+            src="./image/Project-1.png"
+            alt="Chatter-Box chat application screenshot"
+            loading="lazy"
+          />
           <div class="background"></div>
           <div class="project-details">
             <div class="project-head">
@@ -464,7 +600,11 @@
           </div>
         </div>
         <div class="project">
-          <img src="./image/Project-2.png" />
+          <img
+            src="./image/Project-2.png"
+            alt="Healthkart-clone e-commerce app screenshot"
+            loading="lazy"
+          />
           <div class="background"></div>
           <div class="project-details">
             <div class="project-head">
@@ -498,7 +638,11 @@
           </div>
         </div>
         <div class="project">
-          <img src="./image/Project-3.png" />
+          <img
+            src="./image/Project-3.png"
+            alt="Unacademy-clone coaching platform screenshot"
+            loading="lazy"
+          />
           <div class="background"></div>
           <div class="project-details">
             <div class="project-head">
@@ -529,37 +673,6 @@
             </div>
           </div>
         </div>
-        <div class="project">
-          <img src="./image/Project-4.jpg" />
-          <div class="background"></div>
-          <div class="project-details">
-            <div class="project-head">
-              <h3 class="project-name">Gusto-clone</h3>
-              <div class="visit-links">
-                <a
-                  href="https://sumant236.github.io/gusto_clone/why_gusto.html"
-                  target="_blank"
-                  >Visit Site <span>&rarr;</span></a
-                >
-                <a href="https://github.com/sumant236/gusto_clone">
-                  <i class="fa fa-github"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-desc">
-              <p>
-                A service-based organisation which helps other organisations by
-                managing data for them.
-              </p>
-              <h6 class="skills-used">Skills Used:</h6>
-              <ul class="skills-used">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <!-- Contact -->
@@ -570,6 +683,7 @@
       </div>
       <div class="contact">
         <form action="submit" id="portfolioContactForm">
+          <label for="name" class="sr-only">Your name</label>
           <input
             type="text"
             placeholder="Your Name"
@@ -578,6 +692,7 @@
             required
             class="contact-field"
           />
+          <label for="email" class="sr-only">Your email</label>
           <input
             type="email"
             name="email"
@@ -586,6 +701,7 @@
             required
             class="contact-field"
           />
+          <label for="message" class="sr-only">Your message</label>
           <textarea
             name="message"
             id="message"
@@ -601,7 +717,7 @@
             id="submitBtn"
           />
         </form>
-        <div id="response-msg"></div>
+        <div id="response-msg" aria-live="polite"></div>
         <div class="contact-details">
           <h4>Get In Touch</h4>
           <p>
@@ -619,29 +735,26 @@
           </div>
           <div>
             <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>+919050764629</p>
+            <p>+919896939050</p>
           </div>
           <div>
             <i class="fa-regular fa-envelope"></i>
-            <p>Sumantsingh236@gmail.com</p>
+            <p>Sumantphogat@gmail.com</p>
           </div>
         </div>
       </div>
       <div class="contact-icons">
-        <a
-          href="https://www.linkedin.com/in/sumant-singh-619851192/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/singh-sumant/" target="_blank">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
         <a href="https://github.com/sumant236" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="mailto:sumantsingh236@gmail.com" target="_blank">
+        <a href="mailto:sumantphogat@gmail.com" target="_blank">
           <i class="fa-brands fa-google-plus-g"></i>
         </a>
         <a
-          href="https://wa.me/919050764629?text=Hello%20there!"
+          href="https://wa.me/919896939050?text=Hello%20there!,%20I%20saw%20your%20portfolio%20and%20I%20would%20like%20to%20connect%20with%20you."
           target="_blank"
         >
           <i class="fa-brands fa-whatsapp"></i>

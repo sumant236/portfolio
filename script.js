@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!publicKey || !serviceId || !templateId) {
       showResponse(
         "Email service not configured. Please add your EmailJS keys.",
-        "error"
+        "error",
       );
       return;
     }
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         showResponse(
           `Thank you, ${name}! Your message has been sent.`,
-          "success"
+          "success",
         );
         form.reset();
       } catch (error) {
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
           console.error("EmailJS Error:", error);
           showResponse(
             "Failed to send message. Please try again later.",
-            "error"
+            "error",
           );
         }
       } finally {
@@ -104,3 +104,32 @@ document.addEventListener("DOMContentLoaded", () => {
     return re.test(email);
   }
 });
+
+// To align the timeline divider height dynamically based on the last box in each section
+function alignTimelineDivider(sectionId, dividerId) {
+  const section = document.getElementById(sectionId);
+  const divider = document.getElementById(dividerId);
+  if (!section || !divider) return;
+
+  const boxes = section.querySelectorAll(
+    ".timeline-left-box, .timeline-right-box",
+  );
+  if (boxes.length === 0) return;
+
+  const lastBox = boxes[boxes.length - 1];
+  const timelineTop = section
+    .querySelector(".timeline")
+    .getBoundingClientRect().top;
+  const lastBoxTop = lastBox.getBoundingClientRect().top;
+  const dotRadius = 7.5;
+
+  divider.style.height = lastBoxTop - timelineTop + dotRadius + "px";
+}
+
+function alignAllDividers() {
+  alignTimelineDivider("experience", "experience-divider");
+  alignTimelineDivider("education", "education-divider");
+}
+
+window.addEventListener("load", alignAllDividers);
+window.addEventListener("resize", alignAllDividers);
