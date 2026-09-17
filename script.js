@@ -1,6 +1,6 @@
-const publicKey = "2ebawWCyeoWH8z1PF";
-const serviceId = "service_aadd28i";
-const templateId = "template_r06vc5r";
+const publicKey = "3aKy4HGzwGukbW8J9";
+const serviceId = "service_s0klrgw";
+const templateId = "template_3ipijpt";
 
 // Initialize EmailJS
 if (publicKey) {

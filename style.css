@@ -234,6 +234,11 @@ header h1 {
   text-align: center;
 }
 
+.skill-face span,
+.skill-face > i {
+  color: white;
+}
+
 .skill-front {
   flex-direction: column;
   background: color-mix(in srgb, var(--accent) 18%, #1a1a1a 82%);
@@ -855,9 +860,37 @@ form > textarea::-webkit-scrollbar-track {
     font-size: 0.9rem;
     width: 100%;
   }
+
+  .timeline-left-box {
+    width: 55%;
+    left: 5%;
+  }
+  .timeline-right-box {
+    width: 55%;
+    right: -72%;
+  }
+
+  #experience-divider,
+  #education-divider {
+    left: 65.2%;
+  }
 }
 
 @media screen and (max-width: 990px) {
+  .timeline-left-box {
+    width: 60%;
+    left: -1%;
+  }
+
+  .timeline-right-box {
+    width: 60%;
+  }
+
+  #experience-divider,
+  #education-divider {
+    left: 64.4%;
+  }
+
   .project-head > h3 {
     font-size: 1.25rem;
   }
